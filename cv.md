@@ -9,7 +9,7 @@
 - _Location_: <u>Minsk</u>, <u>Belarus</u>,
 - _Phone_:<u>+375(29) 231-07-31</u>,
 - _@GMail.com_:<u>95artm.mick</u>,
-- _Diskord_:<u>Artsiom Mikula (@ligalaz</u>,
+- _Diskord_:<u>Artsiom Mikula (@ligalaz</u>),
 - _Telegram_,
 - <a href="https://www.linkedin.com/in/%D0%B0%D1%80%D1%82%D1%91%D0%BC-%D0%BC%D0%B8%D0%BA%D1%83%D0%BB%D0%B0-495a73221/" target="_blank">_LinkdIn_</a>,
 - <a href="https://github.com/ligalaz" target="_blank">_GitHub_</a>
@@ -18,10 +18,10 @@
 
 ## **_About me_**
 
-Hi, thank you for viewing my CV. I'm Artem. I'm 27 y.o, married.  
-Studying the basics HTML, CSS, JS since August 2021. I plan to study hard, apply the acquired skills in practice in order to become an excellent specialist in the future and return here as a mentor.  
-It's important for me not to stand still, learn new things, to develop together with world technologies.  
-In the future, I would like to work in a modern company, with smart people and benefit the new world.
+> Hi, thank you for viewing my CV. I'm Artem. I'm 27 y.o, married.  
+> Studying the basics HTML, CSS, JS since August 2021. I plan to study hard, apply the acquired skills in practice in order to become an excellent specialist in the future and return here as a mentor.  
+> It's important for me not to stand still, learn new things, to develop together with world technologies.  
+> In the future, I would like to work in a modern company, with smart people and benefit the new world.
 
 - <u>Abilities</u>:
   - Responsibility, learnability, ambitious, focused on results, touch typing
@@ -33,7 +33,7 @@ In the future, I would like to work in a modern company, with smart people and b
 
 ## **_Skills_**
 
-- [x] HTML, CSS()
+- [x] HTML, CSS
 - [x] Git, GitHub
 - [x] Figma
 - [x] JS (part 1)
