@@ -1,31 +1,140 @@
 .wrapper {
   min-height: 100%;
   overflow: hidden;
+  background: url("https://catherineasquithgallery.com/uploads/posts/2021-02/1614441318_62-p-temnii-fon-dlya-chata-77.jpg");
 
   display: flex;
   flex-direction: column;
 }
+
+.container {
+  max-width: 1024px;
+  background: rgba(255, 255, 255, 0.952);
+
+  margin: 0 auto;
+}
+
+/* Header Styles */
+
 .header {
   border: 1px solid black;
 }
-.container {
-  max-width: 768px;
-  margin: 0 auto;
-  background-color: rgb(201, 203, 212);
-}
+
 .header_row {
   display: flex;
 }
+.header_profile {
+}
+.profile_img {
+  background-color: rgba(207, 38, 38, 0.7);
+}
 .header_profile_name {
-  background-color: rgb(207, 38, 38);
+  color: #e6e6fa;
+  font-weight: 600;
+  padding: 15px;
+  background-color: rgba(207, 38, 38, 0.7);
+}
+
+.header_profile_name p {
+  font-size: 18px;
+}
+.header_content {
+  flex: 1 1 auto;
+}
+.header_content img {
+  padding-right: 10px;
+}
+h1 {
+  text-decoration: underline;
+  font-size: 70px;
+  color: rgb(8, 3, 26);
+  text-align: center;
+  margin-left: 5%;
+}
+
+.header_nav {
+  margin: 50px 0 10px 0;
+}
+.header_nav ul {
+  background: black;
+  box-shadow: inset 5px 5px 3px rgb(28, 28, 134),
+    inset -5px -5px 3px rgb(155, 38, 38);
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin: 5px 0;
+  padding: 10px 0;
+}
+.header_nav li {
+  background: rgb(21, 21, 44);
+  line-height: 32px;
+  margin: 5px;
+  padding: 0 3px;
+  border-radius: 5px;
+  font-size: 16px;
+  transform: skewX(-20deg);
+  box-shadow: 0 3px 1px 1px rgb(139, 6, 6);
+}
+.header_nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.header_contacts {
+  color: black;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.header_contacts div {
+  margin-right: -20px;
+  font-size: 20px;
+}
+.header_contacts ul {
+  list-style-type: none;
+  width: 55%;
+  padding: 25px;
+}
+.header_contacts li {
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+.sticker {
+  margin-top: 120px;
+  background-color: red;
+
+  width: 400px;
+  height: 30px;
+
+  position: relative;
+  margin-left: -10px;
+}
+.sticker h2 {
+  color: #e6e6fa;
+  font-size: 25px;
+  padding-left: 20px;
+}
+.sticker::after {
+  content: " ";
+  color: red;
+  position: absolute;
+
+  left: 0px;
+  top: 30px;
+  border: 15px solid transparent;
+  border-top: 20px solid red;
+  border-right: 0px solid red;
 }
 
 .main {
   flex: 1 1 auto;
 }
-
+.left_board {
+  background: white;
+}
 .footer {
-  margin-top: 50px;
 }
 .footer_row {
   display: flex;
@@ -40,10 +149,6 @@
   padding: 20px 0;
 
   text-align: center;
-}
-
-.header_contacts h2 {
-  color: white;
 }
 
 .main_header {
