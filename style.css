@@ -1,0 +1,51 @@
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  border: 1px solid black;
+}
+.container {
+  max-width: 768px;
+  margin: 0 auto;
+  background-color: rgb(201, 203, 212);
+}
+.header_row {
+  display: flex;
+}
+.header_profile_name {
+  background-color: rgb(207, 38, 38);
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+.footer {
+  margin-top: 50px;
+}
+.footer_row {
+  display: flex;
+  align-items: center;
+  background-color: rgb(255, 218, 185);
+}
+
+.footer_links,
+.footer_author,
+.footer_logo {
+  flex: 0 1 33.3%;
+  padding: 20px 0;
+
+  text-align: center;
+}
+
+.header_contacts h2 {
+  color: white;
+}
+
+.main_header {
+  display: flex;
+}
