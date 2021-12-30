@@ -1,7 +1,8 @@
 .wrapper {
   min-height: 100%;
   overflow: hidden;
-  background: url("https://catherineasquithgallery.com/uploads/posts/2021-02/1614441318_62-p-temnii-fon-dlya-chata-77.jpg");
+  background: url("https://catherineasquithgallery.com/uploads/posts/2021-02/1614441318_62-p-temnii-fon-dlya-chata-77.jpg")
+    center center;
 
   display: flex;
   flex-direction: column;
@@ -9,21 +10,19 @@
 
 .container {
   max-width: 1024px;
-  background: rgba(255, 255, 255, 0.952);
+  background: rgb(255, 255, 255);
 
   margin: 0 auto;
 }
 
 /* Header Styles */
 
-.header {
-  border: 1px solid black;
-}
-
 .header_row {
   display: flex;
 }
 .header_profile {
+  flex: 0 0 33.3%;
+  border: 1px solid black;
 }
 .profile_img {
   background-color: rgba(207, 38, 38, 0.7);
@@ -100,17 +99,16 @@ h1 {
   font-size: 18px;
   padding-left: 10px;
 }
+/* sticker*/
 
 .sticker {
-  margin-top: 120px;
   background-color: red;
-
-  width: 400px;
+  width: 300px;
   height: 30px;
-
   position: relative;
-  margin-left: -10px;
+  margin-left: -16px;
 }
+
 .sticker h2 {
   color: #e6e6fa;
   font-size: 25px;
@@ -118,24 +116,125 @@ h1 {
 }
 .sticker::after {
   content: " ";
-  color: red;
+
   position: absolute;
 
   left: 0px;
   top: 30px;
   border: 15px solid transparent;
-  border-top: 20px solid red;
-  border-right: 0px solid red;
+  border-top: 20px solid rgba(255, 0, 0, 0.623);
+  border-right: 0px solid rgba(255, 0, 0, 0.623);
 }
+
+/* Main styles*/
 
 .main {
   flex: 1 1 auto;
 }
+.main_header {
+  display: flex;
+}
 .left_board {
   background: white;
 }
-.footer {
+.right_board {
+  background: white;
+  border: 1px solid black;
+  flex: 1 1 auto;
 }
+
+.main_header .left_board {
+  border: 1px solid black;
+  padding: 15px;
+  flex: 0 0 33.3%;
+}
+.styling_border {
+  margin-bottom: 50px;
+  border: 7px solid red;
+  border-top: none;
+  border-radius: 10px;
+  width: 300px;
+}
+.styling_border p,
+.styling_border li {
+  text-align: justify;
+  margin: 0 5px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.styling_border h2 {
+  text-align: center;
+  color: red;
+  position: relative;
+  top: -7px;
+}
+.styling_border h2::after,
+.styling_border h2::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  background-color: red;
+  height: 7px;
+  width: 50px;
+  top: 7px;
+}
+.styling_border h2::after {
+  border-top-right-radius: 7px;
+  right: -5px;
+}
+.styling_border h2::before {
+  left: -6px;
+  border-top-left-radius: 7px;
+}
+.main_language {
+  margin: 10px 0;
+}
+.main_language ul {
+  list-style-image: url("img/icons/Device-CDR-icon.png");
+}
+.main_language > ul {
+  margin: 10px;
+  padding: 5px 10px;
+}
+
+.main_language > ul ul {
+  padding: 5px 10px;
+}
+
+.main_header .right_board {
+  flex: 1 1 auto;
+}
+.skills {
+  margin: 10px 0;
+}
+.experience {
+  margin: 10px 0;
+  border: 1px solid black;
+}
+.experience ul {
+  margin-left: 20px;
+  padding-left: 50px;
+  list-style-image: url("img/icons/check-mark32.png");
+}
+
+.skills_graphs li {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  display: inline-block;
+  padding-left: 10px;
+}
+
+.skills_level li {
+  display: inline-block;
+  padding-left: 10px;
+
+  width: 50px;
+
+  text-align: center;
+}
+
 .footer_row {
   display: flex;
   align-items: center;
