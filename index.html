@@ -23,18 +23,22 @@
               </div>
             </div>
             <div class="header_content">
-              <h1 class="header_title">Artsiom Mikula</h1>
-              <nav class="header_nav">
-                <ul>
-                  <li><a href="">Contacts</a></li>
-                  <li><a href="">About me</a></li>
-                  <li><a href="">Skills</a></li>
-                  <li><a href="">Work experience</a></li>
-                  <li><a href="">Code example</a></li>
-                  <li><a href="">Education</a></li>
-                  <li><a href="">Languages</a></li>
-                </ul>
-              </nav>
+              <div class="header_title">
+                <h1 class="header_title">Artsiom Mikula</h1>
+                <nav class="header_nav">
+                  <p class="nav_menu">MAIN</p>
+                  <ul class="drop_down">
+                    <li><a href="">Contacts</a></li>
+                    <li><a href="">About me</a></li>
+                    <li><a href="">Skills</a></li>
+                    <li><a href="">Work experience</a></li>
+                    <li><a href="">Code example</a></li>
+                    <li><a href="">Education</a></li>
+                    <li><a href="">Languages</a></li>
+                  </ul>
+                </nav>
+              </div>
+
               <div class="header_contacts">
                 <div>
                   <h2>Contacts:</h2>
@@ -323,18 +327,26 @@
                   </li>
                 </ul>
               </div>
-              <div class="example_code"></div>
-              <div class="sticker">
-                <h2>Code Example</h2>
+              <div class="example_code">
+                <div class="sticker">
+                  <h2>Code Example</h2>
+                </div>
+                <p>
+                  Take a look at my example of solving the "Leap Years" task
+                  from Codewars:
+                </p>
+                <div class="code_border">
+                  <code>
+                    <span class="red_code">function</span>
+                    <span class="violet_code">isLeapYear</span>(year) {<br />
+                    <span class="red_code">let</span> date =
+                    <span class="violet_code">new Date</span>(year,
+                    <span class="blue_code"> 2, 0</span>) <br />
+                    <span class="red_code">return</span> date.getDate()
+                    <span class="blue_code">=== 29</span> <br />}
+                  </code>
+                </div>
               </div>
-              <div class="code_border">
-                <code>
-                  function isLeapYear(year) {<br />
-                  let date = new Date(year, 2, 0) <br />
-                  return date.getDate() === 29 <br />}
-                </code>
-              </div>
-
               <div class="main_language">
                 <div class="sticker">
                   <h2>Languages</h2>
@@ -362,7 +374,7 @@
               </div>
               <ol>
                 <li>
-                  Belarussian National Technical Universit
+                  Belarussian National Technical University
                   <ul>
                     <li>
                       automation and control of thermal power processes
