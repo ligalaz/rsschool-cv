@@ -30,15 +30,19 @@
 /* sticker*/
 
 .sticker {
-  background-color: red;
-  width: 300px;
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 239, 186),
+    rgb(255, 255, 255)
+  );
+  width: 104%;
   height: 30px;
   position: relative;
-  margin-left: -16px;
+  margin-left: -7px;
 }
 
 .sticker h2 {
-  color: #e6e6fa;
+  color: red;
   font-size: 25px;
   padding-left: 20px;
 }
@@ -86,7 +90,6 @@ blockquote {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: -10px 0 3px rgba(255, 0, 0, 0.212);
 }
 
 .header_title {
@@ -97,7 +100,7 @@ h1 {
   flex: 0 0 30%;
   text-decoration: underline;
   font-size: 40px;
-  color: rgb(8, 3, 26);
+  color: white;
   text-align: center;
   margin-left: 5%;
 }
@@ -113,8 +116,12 @@ h1 {
   border: 1px solid black;
   text-align: center;
   font: bold 22px "times new roman";
-  color: white;
-  background-image: linear-gradient(-45deg, #ff0000, #000000);
+  color: black;
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 239, 186),
+    rgb(255, 255, 255)
+  );
   padding: 10px 0;
 }
 .drop_down {
@@ -131,7 +138,11 @@ h1 {
   opacity: 1;
 }
 .header_nav li {
-  background-image: linear-gradient(-45deg, #ff0000, #000000);
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 239, 186),
+    rgb(255, 255, 255)
+  );
   line-height: 32px;
   margin: 5px;
   padding: 0 3px;
@@ -140,7 +151,7 @@ h1 {
 }
 .header_nav a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 /* Main styles*/
@@ -284,17 +295,17 @@ h1 {
   color: black;
   margin-top: 0px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: flex-start;
 }
 .header_contacts div {
-  margin-right: -20px;
   font-size: 20px;
+  align-self: flex-start;
 }
 .header_contacts ul {
   list-style-type: none;
-  width: 70%;
-  padding: 25px;
+  width: 100%;
 }
 .header_contacts li {
   font-size: 18px;
@@ -316,4 +327,9 @@ h1 {
   padding: 20px 0;
 
   text-align: center;
+}
+.footer_links {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
