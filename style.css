@@ -1,9 +1,10 @@
+/* Page Styles*/
+
 .wrapper {
   min-height: 100%;
   overflow: hidden;
   background: url("https://catherineasquithgallery.com/uploads/posts/2021-02/1614441318_62-p-temnii-fon-dlya-chata-77.jpg")
     repeat;
-
   display: flex;
   flex-direction: column;
 }
@@ -21,8 +22,36 @@
     ),
     linear-gradient(90deg, #192129, #303641, #484e57);
   background-size: 8px 8px, 100%;
-
   margin: 0 auto;
+}
+
+/*Contrukt elements*/
+
+/* sticker*/
+
+.sticker {
+  background-color: red;
+  width: 300px;
+  height: 30px;
+  position: relative;
+  margin-left: -16px;
+}
+
+.sticker h2 {
+  color: #e6e6fa;
+  font-size: 25px;
+  padding-left: 20px;
+}
+.sticker::after {
+  content: " ";
+
+  position: absolute;
+
+  left: 0px;
+  top: 30px;
+  border: 15px solid transparent;
+  border-top: 20px solid rgba(255, 0, 0, 0.623);
+  border-right: 0px solid rgba(255, 0, 0, 0.623);
 }
 
 /* Header Styles */
@@ -32,12 +61,15 @@
 }
 .header_profile {
   background: linear-gradient(to right, rgb(255, 239, 186), rgb(255, 255, 255));
-  flex: 1 1 33.3%;
+  flex: 0 0 320px;
 }
 .profile_img {
-  background-color: rgba(207, 38, 38, 0.7);
+  text-align: center;
+  box-shadow: inset 10px 0 3px rgba(255, 0, 0, 0.212);
 }
-.header_profile_name {
+.header_profile_name,
+blockquote {
+  margin-top: -7px;
   color: #e6e6fa;
   font-weight: 600;
   padding: 15px;
@@ -48,11 +80,13 @@
   font-size: 18px;
   text-align: center;
 }
+
 .header_content {
   flex: 1 1 auto;
-}
-.header_content img {
-  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: -10px 0 3px rgba(255, 0, 0, 0.212);
 }
 
 .header_title {
@@ -67,10 +101,8 @@ h1 {
   text-align: center;
   margin-left: 5%;
 }
-
 .header_nav {
   flex: 1 1 auto;
-
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -99,7 +131,7 @@ h1 {
   opacity: 1;
 }
 .header_nav li {
-  background: rgb(21, 21, 44);
+  background-image: linear-gradient(-45deg, #ff0000, #000000);
   line-height: 32px;
   margin: 5px;
   padding: 0 3px;
@@ -111,63 +143,15 @@ h1 {
   color: white;
 }
 
-.header_contacts {
-  color: black;
-  margin-top: 0px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.header_contacts div {
-  margin-right: -20px;
-  font-size: 20px;
-}
-.header_contacts ul {
-  list-style-type: none;
-  width: 70%;
-  padding: 25px;
-}
-.header_contacts li {
-  font-size: 18px;
-  padding-left: 10px;
-}
-/* sticker*/
-
-.sticker {
-  background-color: red;
-  width: 300px;
-  height: 30px;
-  position: relative;
-  margin-left: -16px;
-}
-
-.sticker h2 {
-  color: #e6e6fa;
-  font-size: 25px;
-  padding-left: 20px;
-}
-.sticker::after {
-  content: " ";
-
-  position: absolute;
-
-  left: 0px;
-  top: 30px;
-  border: 15px solid transparent;
-  border-top: 20px solid rgba(255, 0, 0, 0.623);
-  border-right: 0px solid rgba(255, 0, 0, 0.623);
-}
-
 /* Main styles*/
 
-.main {
-  flex: 1 1 auto;
-}
 .main_header {
   display: flex;
 }
+
 .left_board {
   background: linear-gradient(to right, rgb(255, 239, 186), rgb(255, 255, 255));
+  flex: 0 0 320px;
 }
 .right_board {
   flex: 1 1 auto;
@@ -177,7 +161,7 @@ h1 {
 }
 
 .main_header .left_board {
-  padding: 15px;
+  padding: 10px;
   flex: 0 0 33.3%;
 }
 .styling_border {
@@ -223,7 +207,7 @@ h1 {
   margin: 10px 0;
 }
 .main_language ul {
-  list-style-image: url("img/icons/Device-CDR-icon.png");
+  list-style-image: url("img/icons/Device-CDR-icon24.png");
 }
 .main_language > ul {
   margin: 10px;
@@ -295,6 +279,30 @@ h1 {
   border: 1px solid blue;
   background: green;
 }
+
+.header_contacts {
+  color: black;
+  margin-top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.header_contacts div {
+  margin-right: -20px;
+  font-size: 20px;
+}
+.header_contacts ul {
+  list-style-type: none;
+  width: 70%;
+  padding: 25px;
+}
+.header_contacts li {
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+/*FOOTER STYLES*/
+
 .footer_row {
   display: flex;
   align-items: center;
@@ -308,8 +316,4 @@ h1 {
   padding: 20px 0;
 
   text-align: center;
-}
-
-.main_header {
-  display: flex;
 }
