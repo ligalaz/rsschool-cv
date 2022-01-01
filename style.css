@@ -3,10 +3,10 @@
 .wrapper {
   min-height: 100%;
   overflow: hidden;
-  background: url("https://catherineasquithgallery.com/uploads/posts/2021-02/1614441318_62-p-temnii-fon-dlya-chata-77.jpg")
-    repeat;
+  background: url("img/background_cv.jpg");
   display: flex;
   flex-direction: column;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
 .container {
@@ -35,26 +35,26 @@
     rgb(255, 239, 186),
     rgb(255, 255, 255)
   );
-  width: 104%;
+  width: 102%;
   height: 30px;
   position: relative;
   margin-left: -7px;
+  text-align: center;
 }
 
 .sticker h2 {
+  font-family: "Courier New", Courier, monospace, sans-serif;
   color: red;
   font-size: 25px;
   padding-left: 20px;
 }
 .sticker::after {
   content: " ";
-
   position: absolute;
-
   left: 0px;
   top: 30px;
-  border: 15px solid transparent;
-  border-top: 20px solid rgba(255, 0, 0, 0.623);
+  border: 7px solid transparent;
+  border-top: 10px solid rgba(255, 0, 0, 0.623);
   border-right: 0px solid rgba(255, 0, 0, 0.623);
 }
 
@@ -68,14 +68,16 @@
   flex: 0 0 320px;
 }
 .profile_img {
-  text-align: center;
-  box-shadow: inset 10px 0 3px rgba(255, 0, 0, 0.212);
+  text-align: right;
+  box-shadow: inset 120px 0 3px rgba(255, 0, 0, 0.212);
 }
 .header_profile_name,
 blockquote {
-  margin-top: -7px;
+  font-family: "Courier New", Courier, monospace, sans-serif;
+  margin: -5px 0 5px 0;
   color: #e6e6fa;
   font-weight: 600;
+  height: 70px;
   padding: 15px;
   background-color: rgba(207, 38, 38, 0.7);
 }
@@ -97,9 +99,10 @@ blockquote {
   justify-content: space-around;
 }
 h1 {
+  font-family: Montserrat, sans-serif;
   flex: 0 0 30%;
   text-decoration: underline;
-  font-size: 40px;
+  font-size: 35px;
   color: white;
   text-align: center;
   margin-left: 5%;
@@ -109,13 +112,14 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  font-family: "Courier New", Courier, monospace, sans-serif;
 }
 .nav_menu {
   width: 40%;
   height: 50px;
   border: 1px solid black;
   text-align: center;
-  font: bold 22px "times new roman";
+  font: bold 22px "Courier New", Courier, monospace, sans-serif;
   color: black;
   background-image: linear-gradient(
     to right,
@@ -128,7 +132,7 @@ h1 {
   width: 60%;
   margin-top: -2px;
   list-style-type: none;
-  border: 4px solid #800000;
+  border: 4px solid white;
   opacity: 0;
   position: relative;
 }
@@ -149,7 +153,7 @@ h1 {
   border-radius: 5px;
   font-size: 16px;
 }
-.header_nav a {
+a {
   text-decoration: none;
   color: black;
 }
@@ -215,11 +219,20 @@ h1 {
   border-top-left-radius: 7px;
 }
 .main_language {
+  color: white;
   margin: 10px 0;
 }
 .main_language ul {
-  list-style-image: url("img/icons/Device-CDR-icon24.png");
+  position: relative;
 }
+.main_language img {
+  position: absolute;
+  left: -20px;
+}
+.main_language .first {
+  left: 20px;
+}
+
 .main_language > ul {
   margin: 10px;
   padding: 5px 50px;
@@ -234,13 +247,22 @@ h1 {
 }
 .skills {
   margin: 10px 0;
+  text-align: center;
 }
 .experience {
   margin: 10px 0;
 }
+.experience img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
 .experience ul {
-  padding-left: 55px;
-  list-style-image: url("img/icons/check-mark32.png");
+  position: relative;
+  padding: 20px 0 0 50px;
+}
+.experience a {
+  color: white;
 }
 
 .skills_graphs li {
@@ -252,6 +274,7 @@ h1 {
 }
 
 .skills_level li {
+  color: white;
   display: inline-block;
   padding-left: 10px;
 
@@ -259,13 +282,19 @@ h1 {
 
   text-align: center;
 }
-.example_code {
-}
+
 .example_code p {
   padding: 15px 20px;
+  color: white;
 }
 .code_border {
-  padding: 15px 20px;
+  background: white;
+
+  padding: 15px 20%;
+  border: 1px solid black;
+}
+.code {
+  border: 1px solid red;
 }
 
 .red_code {
@@ -280,16 +309,6 @@ h1 {
 .main_footer {
   background: linear-gradient(to right, rgb(255, 239, 186), rgb(255, 255, 255));
 }
-.main_footer_container {
-  max-width: 400px;
-  margin: 0px auto;
-  border: 3px solid yellow;
-}
-
-.title {
-  border: 1px solid blue;
-  background: green;
-}
 
 .header_contacts {
   color: black;
@@ -303,21 +322,45 @@ h1 {
   font-size: 20px;
   align-self: flex-start;
 }
+.header_contacts img {
+  position: absolute;
+  left: 5px;
+}
+.header_contacts img:first-child {
+  top: 5px;
+}
+.diskord {
+  bottom: 15px;
+}
 .header_contacts ul {
+  position: relative;
   list-style-type: none;
   width: 100%;
 }
 .header_contacts li {
   font-size: 18px;
-  padding-left: 10px;
+  padding: 10px 0 10px 50px;
 }
-
+.education ol {
+  margin: 10px 30px;
+}
+.education li {
+  padding: 10px 0;
+  color: white;
+}
+.education li:last-child {
+  padding: 0;
+}
+.education ul {
+  padding-left: 50px;
+}
 /*FOOTER STYLES*/
 
 .footer_row {
   display: flex;
   align-items: center;
   background-color: rgb(255, 218, 185);
+  font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 .footer_links,
