@@ -27,7 +27,7 @@
 
 /*Contrukt elements*/
 
-/* sticker*/
+/* sticker */
 
 .sticker {
   background-image: linear-gradient(
@@ -46,8 +46,8 @@
   font-family: "Courier New", Courier, monospace, sans-serif;
   color: red;
   font-size: 25px;
-  padding-left: 20px;
 }
+
 .sticker::after {
   content: " ";
   position: absolute;
@@ -66,11 +66,9 @@
 .header_profile {
   background: linear-gradient(to right, rgb(255, 239, 186), rgb(255, 255, 255));
   flex: 0 0 320px;
+  text-align: center;
 }
-.profile_img {
-  text-align: right;
-  box-shadow: inset 120px 0 3px rgba(255, 0, 0, 0.212);
-}
+
 .header_profile_name,
 blockquote {
   font-family: "Courier New", Courier, monospace, sans-serif;
@@ -80,11 +78,7 @@ blockquote {
   height: 70px;
   padding: 15px;
   background-color: rgba(207, 38, 38, 0.7);
-}
-
-.header_profile_name p {
   font-size: 18px;
-  text-align: center;
 }
 
 .header_content {
@@ -98,6 +92,7 @@ blockquote {
   display: flex;
   justify-content: space-around;
 }
+
 h1 {
   font-family: Montserrat, sans-serif;
   flex: 0 0 30%;
@@ -107,6 +102,7 @@ h1 {
   text-align: center;
   margin-left: 5%;
 }
+
 .header_nav {
   flex: 1 1 auto;
   display: flex;
@@ -114,6 +110,7 @@ h1 {
   align-items: flex-end;
   font-family: "Courier New", Courier, monospace, sans-serif;
 }
+
 .nav_menu {
   width: 40%;
   height: 50px;
@@ -128,6 +125,7 @@ h1 {
   );
   padding: 10px 0;
 }
+
 .drop_down {
   width: 60%;
   margin-top: -2px;
@@ -137,36 +135,48 @@ h1 {
   position: relative;
 }
 
-.drop_down:hover,
-.nav_menu:hover + .drop_down {
-  opacity: 1;
-}
 .header_nav li {
   background-image: linear-gradient(
     to right,
     rgb(255, 239, 186),
     rgb(255, 255, 255)
   );
+  font-size: 16px;
   line-height: 32px;
+  border-radius: 5px;
   margin: 5px;
   padding: 0 3px;
-  border-radius: 5px;
-  font-size: 16px;
 }
+
 a {
   text-decoration: none;
   color: black;
+  font-weight: bold;
+}
+
+.drop_down:hover,
+.nav_menu:hover + .drop_down {
+  opacity: 1;
+}
+.header_nav li:hover {
+  background: rgb(199, 6, 16);
+}
+
+blockquote {
+  padding-top: 10px;
+  font-size: 16px;
 }
 
 /* Main styles*/
 
-.main_header {
+.main_row {
   display: flex;
 }
 
 .left_board {
   background: linear-gradient(to right, rgb(255, 239, 186), rgb(255, 255, 255));
   flex: 0 0 320px;
+  padding: 10px;
 }
 .right_board {
   flex: 1 1 auto;
@@ -175,12 +185,8 @@ a {
   justify-content: space-between;
 }
 
-.main_header .left_board {
-  padding: 10px;
-  flex: 0 0 33.3%;
-}
 .styling_border {
-  margin-bottom: 50px;
+  margin: 50px 0;
   border: 7px solid red;
   border-top: none;
   border-radius: 10px;
@@ -193,7 +199,6 @@ a {
   padding: 5px;
   font-size: 16px;
 }
-
 .styling_border h2 {
   text-align: center;
   color: red;
@@ -218,97 +223,6 @@ a {
   left: -6px;
   border-top-left-radius: 7px;
 }
-.main_language {
-  color: white;
-  margin: 10px 0;
-}
-.main_language ul {
-  position: relative;
-}
-.main_language img {
-  position: absolute;
-  left: -20px;
-}
-.main_language .first {
-  left: 20px;
-}
-
-.main_language > ul {
-  margin: 10px;
-  padding: 5px 50px;
-}
-
-.main_language > ul ul {
-  padding: 5px 10px;
-}
-
-.main_header .right_board {
-  flex: 1 1 auto;
-}
-.skills {
-  margin: 10px 0;
-  text-align: center;
-}
-.experience {
-  margin: 10px 0;
-}
-.experience img {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-}
-.experience ul {
-  position: relative;
-  padding: 20px 0 0 50px;
-}
-.experience a {
-  color: white;
-}
-
-.skills_graphs li {
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  display: inline-block;
-  padding-left: 10px;
-}
-
-.skills_level li {
-  color: white;
-  display: inline-block;
-  padding-left: 10px;
-
-  width: 50px;
-
-  text-align: center;
-}
-
-.example_code p {
-  padding: 15px 20px;
-  color: white;
-}
-.code_border {
-  background: white;
-
-  padding: 15px 20%;
-  border: 1px solid black;
-}
-.code {
-  border: 1px solid red;
-}
-
-.red_code {
-  color: red;
-}
-.violet_code {
-  color: rgb(145, 16, 145);
-}
-.blue_code {
-  color: blue;
-}
-.main_footer {
-  background: linear-gradient(to right, rgb(255, 239, 186), rgb(255, 255, 255));
-}
 
 .header_contacts {
   color: black;
@@ -321,6 +235,8 @@ a {
 .header_contacts div {
   font-size: 20px;
   align-self: flex-start;
+  padding: 15px;
+  text-decoration: underline;
 }
 .header_contacts img {
   position: absolute;
@@ -330,7 +246,7 @@ a {
   top: 5px;
 }
 .diskord {
-  bottom: 15px;
+  bottom: 5px;
 }
 .header_contacts ul {
   position: relative;
@@ -338,9 +254,92 @@ a {
   width: 100%;
 }
 .header_contacts li {
-  font-size: 18px;
+  font-size: 16px;
   padding: 10px 0 10px 50px;
 }
+
+.skills {
+  margin: 10px 0;
+  text-align: center;
+}
+.skills_graphs li,
+.skills_level li {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  display: inline-block;
+  padding-left: 10px;
+  margin-top: 15px;
+}
+.skills_level li {
+  color: white;
+  margin: 0;
+}
+
+.experience {
+  margin: 10px 0;
+}
+.experience img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.experience ul {
+  position: relative;
+  padding: 20px 0 10px 50px;
+}
+.experience a {
+  color: white;
+}
+.experience a:hover {
+  color: black;
+  font-weight: bold;
+}
+
+.example_code p {
+  padding: 15px 20px;
+  color: white;
+  font-size: 18px;
+}
+.code_border {
+  background: white;
+  font-size: 15px;
+  padding: 15px 20%;
+  border: 1px solid black;
+}
+.red_code {
+  color: red;
+}
+.violet_code {
+  color: rgb(145, 16, 145);
+}
+.blue_code {
+  color: blue;
+}
+
+.main_language {
+  color: white;
+  margin: 10px 0 0;
+}
+.main_language ul {
+  margin-top: 10px;
+  position: relative;
+}
+.main_language img {
+  position: absolute;
+  left: -20px;
+}
+.main_language .first {
+  left: 20px;
+}
+.main_language > ul {
+  margin: 10px;
+  padding: 5px 50px;
+}
+.main_language > ul ul {
+  padding: 5px 10px;
+}
+
 .education ol {
   margin: 10px 30px;
 }
@@ -349,11 +348,12 @@ a {
   color: white;
 }
 .education li:last-child {
-  padding: 0;
+  padding: 5px;
 }
 .education ul {
   padding-left: 50px;
 }
+
 /*FOOTER STYLES*/
 
 .footer_row {
@@ -368,11 +368,13 @@ a {
 .footer_logo {
   flex: 0 1 33.3%;
   padding: 20px 0;
-
   text-align: center;
 }
 .footer_links {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+.footer_links img:hover {
+  transform: scale(1.5);
 }
