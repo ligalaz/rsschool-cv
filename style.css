@@ -25,7 +25,7 @@
   margin: 0 auto;
 }
 
-/*Contrukt elements*/
+/*Construkt elements*/
 
 /* sticker */
 
@@ -110,7 +110,6 @@ h1 {
   align-items: flex-end;
   font-family: "Courier New", Courier, monospace, sans-serif;
 }
-
 .nav_menu {
   width: 40%;
   height: 50px;
@@ -125,7 +124,6 @@ h1 {
   );
   padding: 10px 0;
 }
-
 .drop_down {
   width: 60%;
   margin-top: -2px;
@@ -134,7 +132,6 @@ h1 {
   opacity: 0;
   position: relative;
 }
-
 .header_nav li {
   background-image: linear-gradient(
     to right,
@@ -147,13 +144,11 @@ h1 {
   margin: 5px;
   padding: 0 3px;
 }
-
 a {
   text-decoration: none;
   color: black;
   font-weight: bold;
 }
-
 .drop_down:hover,
 .nav_menu:hover + .drop_down {
   opacity: 1;
