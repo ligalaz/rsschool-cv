@@ -1,5 +1,7 @@
 /* Page Styles*/
-
+html {
+  scroll-behavior: smooth;
+}
 .wrapper {
   min-height: 100%;
   overflow: hidden;
@@ -255,7 +257,8 @@ blockquote {
   padding: 10px 0 10px 50px;
 }
 
-.skills {
+.skills,
+.experience {
   margin: 10px 0;
   text-align: center;
 }
@@ -372,8 +375,12 @@ blockquote {
   justify-content: space-around;
   flex-wrap: wrap;
 }
+.footer_links img {
+  transition: 0.3s ease-in-out;
+}
 .footer_links img:hover {
   transform: scale(1.5);
+  transition: 0.3s ease-in-out;
 }
 
 @media (min-width: 320px) and (max-width: 479px) {
