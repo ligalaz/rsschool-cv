@@ -264,6 +264,7 @@ blockquote {
 }
 .skills_graphs li,
 .skills_level li {
+  font-size: 0.85rem;
   width: 50px;
   height: 50px;
   text-align: center;
@@ -482,4 +483,43 @@ blockquote {
     font-size: 14px;
     text-align: center;
   }
+}
+
+.projects_box {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: yellow;
+  cursor: pointer;
+  font-size: 2rem;
+}
+.projects_box-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.middle-child {
+  width: 200px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  position: relative;
+}
+.middle-slider {
+  display: flex;
+  position: relative;
+}
+
+.middle_element {
+  position: relative;
+}
+
+.projects_img {
+  width: 200px;
+  height: 100px;
+  border: 1px solid yellow;
 }
