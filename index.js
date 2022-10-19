@@ -6,7 +6,7 @@ let offset = 0;
 
 right.addEventListener("click", () => {
   offset += 200;
-  if (offset > 1600) {
+  if (offset > 1800) {
     offset = 0;
   }
   slideRow.style.left = -offset + `px`;
@@ -14,7 +14,7 @@ right.addEventListener("click", () => {
 left.addEventListener("click", () => {
   offset -= 200;
   if (offset < 0) {
-    offset = 1600;
+    offset = 1800;
   }
   slideRow.style.left = -offset + `px`;
 });
