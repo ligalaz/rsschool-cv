@@ -420,6 +420,7 @@ blockquote {
   .footer_links {
     margin-left: 30px;
     justify-items: space-around;
+    column-gap: 30px;
   }
 }
 @media (min-width: 480px) and (max-width: 599px) {
